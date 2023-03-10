@@ -141,12 +141,9 @@ def add_border(arr : np.array) -> np.array:
 # list_days()
 
 # %%
-def list_days(start_date, end_date) -> np.array:
-    start_date = np.datetime64(start_date)
-    end_date = np.datetime64(end_date)
-    dates = np.arange(start_date, end_date + np.timedelta64(1, 'D'), np.timedelta64(1, 'D'))
-    temp = np.array([str(date) for date in dates])
-    return temp[0:-1]
+def list_days(date1 : np.datetime64, date2 : np.datetime64):
+    out = np.arange(date1, date2, dtype="M8[D]")
+    return out
 
 # %%
 # Írj egy fügvényt ami vissza adja az aktuális dátumot az alábbi formában: YYYY-MM-DD
