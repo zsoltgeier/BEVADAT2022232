@@ -155,9 +155,7 @@ def list_days(start_date, end_date) -> np.array:
 
 # %%
 def actual_date() -> str:
-    today = np.datetime64('today')
-    date_str = np.datetime_as_string(today, unit='D')
-    return date_str
+    return np.datetime64("today")
 
 # %%
 # Írj egy olyan függvényt ami visszadja, hogy mennyi másodperc telt el 1970 január 01. 00:00:00 óta.
