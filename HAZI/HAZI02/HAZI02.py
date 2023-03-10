@@ -9,7 +9,8 @@ import numpy as np
 
 # %%
 def column_sawp(arr : np.array) -> np.array:
-    return np.fliplr(arr)
+    arr = np.flip(arr, 1)
+    return arr
 
 # %%
 #Készíts egy olyan függvényt ami összehasonlít két array-t és adjon vissza egy array-ben, hogy hol egyenlőek 
