@@ -21,7 +21,8 @@ def column_sawp(arr : np.array) -> np.array:
 
 # %%
 def compare_two_array(arr1 : np.array, arr2 : np.array) -> np.array:
-    return np.where(arr1 == arr2)[0]
+    out = np.where(arr1[::] == arr2[::])
+    return out
 
 # %%
 #Készíts egy olyan függvényt, ami vissza adja a megadott array dimenzióit:
