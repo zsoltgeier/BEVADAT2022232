@@ -164,7 +164,7 @@ def actual_date():
 
 
 # %%
-def sec_from_1970() -> int:
+def sec_from_1970():
     epoch = np.datetime64('1970-01-01T00:00:00')
     current_time = np.datetime64('now')
     seconds_since_epoch = (current_time - epoch) / np.timedelta64(1, 's')
