@@ -153,7 +153,7 @@ def list_days(date1 : np.datetime64, date2 : np.datetime64):
 # Ki: 2017-03-24 
 
 # %%
-def actual_date():
+def get_act_date():
     return np.datetime64("today")
 
 # %%
