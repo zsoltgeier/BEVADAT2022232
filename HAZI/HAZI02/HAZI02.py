@@ -8,7 +8,7 @@ import numpy as np
 # column_swap()
 
 # %%
-def column_sawp(arr : np.array) -> np.array:
+def column_swap(arr : np.array) -> np.array:
     arr = np.flip(arr, 1)
     return arr
 
